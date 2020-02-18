@@ -203,9 +203,13 @@ function getFullNames(runners) {
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
 function firstNamesAllCaps(runners) {
-  let capsRunners = [];
-  runners.forEach(runner => capsRunners.push(`${runner.first_name}`.toUpperCase()));
-  return capsRunners;
+  
+  // let capsRunners = [];
+  // runners.forEach(runner => capsRunners.push(`${runner.first_name}`.toUpperCase()));
+  // return capsRunners;
+
+  return runners.map((runner) => `${runner.first_name.toUpperCase()}`)
+
 }
 
 /**
